@@ -14,4 +14,7 @@ cmd.exe /c 'sc config W3SVC start= auto'
 
 net start W3SVC
 
+Dism /online /Enable-Feature /FeatureName:TelnetServer /All
+Dism /online /Enable-Feature /FeatureName:TelnetClient /All
+
 iisreset /start
